@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Alert } from 'antd';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import styled, { createGlobalStyle } from 'styled-components';
 import 'antd/dist/antd.css';
+import Auth from 'containers/Auth';
 
 const GlobalStyle = createGlobalStyle`
   html, body, #root {
@@ -13,7 +13,8 @@ const GlobalStyle = createGlobalStyle`
 
 const Wrapper = styled.div`
   height: 100%;
-  padding: 15px;
+  min-height: 400px;
+  min-width: 900px;
 `;
 
 class App extends Component {
@@ -23,33 +24,11 @@ class App extends Component {
         <GlobalStyle />
 
         <Router>
-          <div>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-
-            <hr />
-
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-          </div>
+          <Auth />
         </Router>
       </Wrapper>
     );
   }
-}
-
-function Home() {
-  return <Alert message="Home page" />
-}
-
-function About() {
-  return <Alert type="warning" message="About page" />
 }
 
 export default App;

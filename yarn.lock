@@ -935,14 +935,14 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@scorocode/client-sdk@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@scorocode/client-sdk/-/client-sdk-1.2.0.tgz#9e55943e90b93309c02cde7a55d7eddaad42bb44"
-  integrity sha512-4PkoP/7DoD4FWzeKeTyAfiknlpGjrxqZQhBqCKHqs5613VBL/RHe8zrgUzurRhQx8CsxIHYqhtiFxNJpWA4iGQ==
+"@scorocode/client-sdk@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@scorocode/client-sdk/-/client-sdk-1.3.2.tgz#a0dcc8bf99f7b2c928edfbb49cbdf1d22607640a"
+  integrity sha512-bgcx6TIwJd52g+bZoCYxaSrSXIJbXUZWuY+NCQLeh8iFxOdHm+9f24o0LcdrsthhjNHxAyAVoDpQCnpTGR6IrQ==
   dependencies:
     form-data "2.3.2"
     isomorphic-ws "4.0.1"
-    lodash "4.17.10"
+    lodash "4.17.11"
     node-fetch "2.2.0"
     qs "6.5.2"
     ws "6.1.0"
@@ -6386,12 +6386,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.17.10:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
-  integrity sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg==
-
-"lodash@>=3.5 <5", lodash@^4.16.5, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
+lodash@4.17.11, "lodash@>=3.5 <5", lodash@^4.16.5, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
