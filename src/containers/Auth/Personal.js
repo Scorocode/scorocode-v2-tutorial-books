@@ -1,8 +1,11 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import { Redirect, Link } from 'react-router-dom';
+import { Switch, Route, Redirect, Link } from 'react-router-dom';
 import { Divider, Icon } from 'antd';
 import styled from 'styled-components';
+
+import BookList from 'containers/BookList';
+import BookDetail from 'containers/BookDetail';
 
 const NavContainer = styled.div`
   height: 60px;
@@ -41,7 +44,7 @@ export default class Personal extends React.Component {
         <React.Fragment>
           <NavContainer>
             <NavName>
-              Example App
+              Мои книги
             </NavName>
 
             <NavUser>
@@ -56,7 +59,12 @@ export default class Personal extends React.Component {
           </NavContainer>
 
           <ContentContainer>
-            Application to be here...
+            <Switch>
+              <Route exact path="/p" render={(props) => <BookList {...props} user={user} />} />
+              <Route path="/p/book/:id" render={(props) => <BookDetail {...props} user={user} />} />
+              <Route path="/p/book" render={(props) => <BookDetail {...props} user={user} />} />
+            </Switch>
+
           </ContentContainer>
         </React.Fragment>
       );
